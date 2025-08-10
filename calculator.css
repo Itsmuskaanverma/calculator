@@ -1,0 +1,92 @@
+body {
+    background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.calculator {
+    background: #222;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+#display {
+    width: 100%;
+    height: 60px;
+    font-size: 28px;
+    text-align: right;
+    margin-bottom: 15px;
+    padding: 10px;
+    background: #111;
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+
+.calc-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 70px);
+    grid-auto-rows: 60px;
+    gap: 10px;
+}
+
+button {
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    background: #333;
+    color: white;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #444;
+}
+
+button.op {
+    background: #ff9500;
+}
+
+button.op:hover {
+    background: #e08900;
+}
+
+button.clear-all {
+    background: #ff3b30;
+}
+
+button.clear-all:hover {
+    background: #d82a20;
+}
+
+button.clear-last {
+    background: #ffcc00;
+    color: #000;
+}
+
+button.clear-last:hover {
+    background: #e6b800;
+}
+
+button.equal {
+    background: #34c759;
+}
+
+button.equal:hover {
+    background: #28a745;
+}
+
+.zero {
+    grid-column: span 3;
+}
+
+.equal {
+    grid-column: span 1;
+}
+
